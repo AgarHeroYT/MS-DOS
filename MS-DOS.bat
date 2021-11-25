@@ -67,3 +67,18 @@ if %answer%=='y' goto 'save'
 if %answer%=='n' goto 'Start_2'
 :save
 goto Start_2
+:Start_2
+echo You survived the viruses and you come accross some privete files
+echo 1 file is about the history of MS-DOS, the 2 file is about how to get out of here
+set /p answer=Choose a number to continue.
+if %answer%==1 goto MS-DOS_1
+if %answer%==2 goto Getting_out
+:MS-DOS_1
+echo MS-DOS is an operating system for x86-based personal computers mostly developed by Microsoft. Collectively, 
+echo MS-DOS, its rebranding as IBM PC DOS, and some operating systems attempting to be compatible with MS-DOS,
+echo are sometimes referred to as "DOS" (which is also the generic acronym for disk operating system).
+pause
+goto Start_2
+:Getting_out
+echo to get out of here simply restart MS-DOS.
+pause
